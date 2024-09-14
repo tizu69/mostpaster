@@ -89,7 +89,10 @@
 					processing = true;
 					error = null;
 
-					fetch('/api/track?tracking_reference=' + encodeURIComponent(tcode))
+					fetch(
+						'http://postmaster-proxy.bluemethyst.workers.dev/track?tracking_reference=' +
+							encodeURIComponent(tcode)
+					)
 						.then(handleNewTrack)
 						.catch((e) => err(e + ' - are you online?'));
 				}}

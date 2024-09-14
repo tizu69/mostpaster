@@ -53,12 +53,12 @@ sw.addEventListener('fetch', (event) => {
 		try {
 			const response = await fetch(event.request);
 			if (!(response instanceof Response)) throw new Error('invalid response from fetch');
-			if (response.status == 200 && !response.url.includes('api'))
+			if (response.status == 200 && !response.url.includes('postmaster'))
 				cache.put(event.request, response.clone());
 			return response;
 		} catch (err) {
 			const response = await cache.match(event.request);
-			if (response && !response.url.includes('api')) return response;
+			if (response && !response.url.includes('postmaster')) return response;
 			throw err;
 		}
 	}

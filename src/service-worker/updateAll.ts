@@ -14,7 +14,8 @@ export default async () => {
 
 		for await (const tracker of trackers) {
 			const r = await fetch(
-				'/api/track?tracking_reference=' + encodeURIComponent(tracker.tracking_reference)
+				'http://postmaster-proxy.bluemethyst.workers.dev/track?tracking_reference=' +
+					encodeURIComponent(tracker.tracking_reference)
 			);
 			if (!r.ok) return err('Sorry, but the API Mostpaster uses appears to be down.');
 			const body = (await r.json().catch(err)) as PResponse;
