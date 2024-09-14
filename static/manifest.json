@@ -1,0 +1,33 @@
+{
+	"short_name": "Mostpaster",
+	"name": "Mostpaster: Parcel tracking made mostly pasting",
+	"icons": [
+		{
+			"src": "/icon.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		}
+	],
+	"id": "/?source=pwa",
+	"start_url": "/?source=pwa",
+	"background_color": "#1E1E2E",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#313244",
+	"shortcuts": [],
+	"description": "NZ Post tracking helper built with love in Germany out of all places",
+	"screenshots": [
+		{
+			"src": "/screenshots/1.png",
+			"type": "image/png",
+			"sizes": "1080x1440",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "/screenshots/1.png",
+			"type": "image/png",
+			"sizes": "1080x1440",
+			"form_factor": "wide"
+		}
+	]
+}

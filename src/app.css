@@ -1,0 +1,40 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+	@apply select-none bg-base text-text;
+	@apply font-["Montserrat",sans-serif] font-medium;
+}
+
+* {
+	@apply border-surface0;
+}
+
+.input {
+	@apply w-full rounded-md bg-surface0 px-3 py-2 text-base !text-text transition-[background];
+	@apply placeholder:text-subtext1 focus:bg-surface1 focus:outline-none;
+}
+.input-icon {
+	@apply absolute left-2 top-1/2 size-5 -translate-y-1/2 text-subtext1;
+}
+
+.btn {
+	@apply !mt-4 w-full rounded-md bg-blue p-2 text-base transition-[brightness];
+	@apply hover:brightness-105 active:brightness-95 disabled:brightness-75;
+}
+
+.border-stop {
+	border-image: linear-gradient(
+		0deg,
+		rgb(var(--ctp-blue)) 0%,
+		rgb(var(--ctp-blue)) 50%,
+		transparent 51%
+	);
+	border-image-slice: 1;
+}
+.sel {
+	@apply select-all;
+}
