@@ -1,38 +1,20 @@
-# create-svelte
+# Mostpaster (codename postmaster-better)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A New Zealand parcel tracking application built upon an API proxy.
+Production build is [available here](https://mostpaster.vercel.app).
 
-## Creating a project
+## Notes
+- this is just a beta basically
+- expect bugs, web dev is hard
+- desktop uses mobile UI
+- no image support yet
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Known bugs
+- "add new tracker" bottom sheet is kinda buggy in chrome, but works fine in pwa, or just use gboard next button
+- delete gesture can get stuck sometimes, I was too lazy to fix this, just swipe again
+- delete gesture broken on desktop
+- service worker to auto refresh may not work as expected
+- notification service is dead
+- mobile icon is low res as fuck
+- install screen got.. cool screenshots
+- home screen scroll is kinda hard rn (same)

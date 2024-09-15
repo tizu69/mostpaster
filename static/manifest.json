@@ -5,7 +5,7 @@
 		{
 			"src": "/icon.png",
 			"type": "image/png",
-			"sizes": "144x144"
+			"sizes": "512x512"
 		}
 	],
 	"id": "/?source=pwa",
@@ -18,16 +18,16 @@
 	"description": "NZ Post tracking helper built with love in Germany out of all places",
 	"screenshots": [
 		{
-			"src": "/screenshots/1.png",
+			"src": "/screenshots/0.png",
 			"type": "image/png",
-			"sizes": "1080x1440",
+			"sizes": "375x667",
 			"form_factor": "narrow"
 		},
 		{
 			"src": "/screenshots/1.png",
 			"type": "image/png",
-			"sizes": "1080x1440",
-			"form_factor": "wide"
+			"sizes": "375x667",
+			"form_factor": "narrow"
 		}
 	]
 }
